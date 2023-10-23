@@ -1,0 +1,208 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>My resume</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}" />
+		<link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}" />
+		<noscript><link rel="stylesheet" href="{{url_for('static',filename='css/noscript.css')}}" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="{{url_for('index')}}" class="logo">Home</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="{{url_for('index')}}">Skills</a></li>
+							<li><a href="{{url_for('about')}}">About</a></li>
+							<li><a href="{{url_for('projects')}}">Projects</a></li>
+							<li class="active"><a href="{{url_for('myresume')}}">My Resume</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://twitter.com/hima286425" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.linkedin.com/in/hima286425/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="https://github.com/Himasekhar286425" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<span class="date"></span>
+									<h1>Hima Sekhar V</h1>
+									<h3>CAREER OBJECTIVE:</h3>
+									<p><h6>To reach the highest echelons in an organization with hard work, dedication, and constant endeavor to perform better and give good results.</h6></p>
+								<div class="table-container">
+                                    <table>
+                                        <h3>Education Qualification:</h3>
+                                        <tr>
+                                        <th width="20%">Course</th>
+                                        <th width="30%">Institution</th>
+                                        <th>Board/University</th>
+                                        <th>Year Of Completion</th>
+                                        <th>Marks</th>
+                                        </tr>
+                                        <tr>
+                                        <td>B.S.C(MECS)</td>
+                                        <td>Mother Thersa Degree College,Palamaner</td>
+                                        <td>Sri Venkatesawara University,Tirupathi</td>
+                                        <td>2018 - 2022</td>
+                                        <td>85%</td>
+                                        </tr>
+                                        <tr>
+                                        <td>MPC</td>
+                                        <td>Mother Thersa Junior College,Palamaner</td>
+                                        <td>Board of Intermediate</td>
+                                        <td>2016 - 2018</td>
+                                        <td>80%</td>
+                                        </tr>
+                                        <tr>
+                                        <td>SSC</td>
+                                        <td>Rayalaseema Children Paradise School,Punganur</td>
+                                        <td>Board of Secondary Education</td>
+                                        <td>2015</td>
+                                        <td>70%</td>
+                                        </tr>
+                                    </table>
+                                </div>
+									<section id="skills">
+										<h3>Skills:</h3>
+										<ul>
+											<li>Python</li>
+											<li>Pandas With Python</li>
+											<li>Numpy</li>
+											<li>Matpotlib</li>
+											<li>HTML/CSS</li>
+										</ul>
+									</section>
+
+                                    <section id="projects of python">
+                                        <h3>Projects Of Python:</h3>
+                                        <ul>
+                                        <li>Atm Project</li>
+                                        <li>Calculator</li>
+                                        <li>Computer Quiz Project</li>
+                                        <li>Rock,Paper,Scissors</li>
+                                        </ul>
+                                    </section>
+
+                                    <section id="ceritication">
+                                        <h3>Certification:</h3>
+                                        <ul>
+                                        <li>Python</li>
+                                        <li>Machine Learning With Python</li>
+                                        <li>Data Science With Python</li>
+                                        </ul>
+                                    </section>
+
+                                    <section id="hobbies">
+                                        <h3>Hobbies:</h3>
+                                        <ul>
+                                        <li>Listening Music</li>
+                                        <li>Playing chess</li>
+                                        </ul>
+                                    </section>
+
+                                    <section id="strength">
+                                        <h3>Strength:</h3>
+                                        <ul>
+											<li><p>Leadership qualities with good ability to work as a team member.
+											Adaptable to any kind of situation in estranged group and helping tendency.
+											Hard Working.
+											Good communication skills.</p></li>
+                                        </ul>
+                                    </section>
+
+                                    <section id="Declaration">
+                                        <h3>Declaration:</h3>
+                                        <p>I here by declare that the information is finished in above is true to the best of my knowledge.I assure you that,I will be responsible for its accuracy.</p>
+                                        <p>Place : Bengaluru</p>
+                                    </section>
+
+
+							</section>
+                            <section id="resume">
+								<h3>Resume:</h3>
+
+								<a href="{{url_for('static',filename='_resume_.pdf')}}" download="Hima_Sekhar_Resume.pdf" class="download-button">Download Resume</a>
+							</section>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+						</section>
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>Kummara street,punganur<br />
+								chittoor Dist, Andhar Pradesh -517247</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">(+91) 9963600932</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">himasekhar27350@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://twitter.com/hima286425" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="https://www.linkedin.com/in/hima286425/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+									<li><a href="https://github.com/Himasekhar286425" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; </li><li>Design: <a href="https://html5up.net">HIMA SEKHAR </a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="static/js/jquery.min.js"></script>
+			<script src="static/js/jquery.scrollex.min.js"></script>
+			<script src="static/js/jquery.scrolly.min.js"></script>
+			<script src="static/js/browser.min.js"></script>
+			<script src="static/js/breakpoints.min.js"></script>
+			<script src="static/js/util.js"></script>
+			<script src="static/js/main.js"></script>
+
+	</body>
+</html>

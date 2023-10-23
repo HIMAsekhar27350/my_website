@@ -1,0 +1,216 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>My Website</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/main.css')}}" />
+		<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/style.css')}}" />
+		<noscript><link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/noscript.css')}}" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>Hi,There<br />
+						I'am,V Hima Sekher</h1>
+						<p><a href="https://twitter.com/hima286425">Twitter</a> And <a href="https://www.linkedin.com/in/hima286425/">Linkedin</a><br />
+						</a></p>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="{{url_for('index')}}" class="logo">Home</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="{{url_for('index')}}">Skills</a></li>
+							<li><a href="{{url_for('about')}}">About</a></li>
+							<li><a href="{{url_for('projects')}}">Projects</a></li>
+							<li><a href="{{url_for('myresume')}}">My Resume</a></li>
+
+						</ul>
+						<ul class="icons">
+							<li><a href="https://twitter.com/hima286425" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.linkedin.com/in/hima286425/" class="icon brands fa-linkedin"><span class="label">Instagram</span></a></li>
+							<li><a href="https://github.com/Himasekhar286425" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major">
+									<span class="date"></span>
+									<h2><a href="#">Skills<br />
+									</a></h2>
+									<p>Python and Libraries in python</p>
+								</header>
+								<a href="#" class="image main"><img src="{{ url_for('static', filename='images/python.png') }}" alt="" /></a>
+								<ul class="actions special">
+
+								</ul>
+							</article>
+
+						<!-- Posts -->
+							<section class="posts">
+								<article>
+									<header>
+										<span class="date"></span>
+										<h2><a href="#">Numpy<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="{{ url_for('static', filename='images/numpy3.jpg') }}" alt="" /></a>
+									<ul class="actions special">
+
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date"></span>
+										<h2><a href="#">Pandas<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="{{ url_for('static', filename='images/pandas1.png') }}" alt="" /></a>
+									<ul class="actions special">
+
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date"></span>
+										<h2><a href="#">Matplotlib<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="{{url_for('static',filename='images/matplotlib1.jpg')}}" alt="" /></a>
+									<p></p>
+									<ul class="actions special">
+
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date"></span>
+										<h2><a href="#">Flask<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="{{url_for('static',filename='images/flask1.jpg')}}" alt="" /></a>
+									<p></p>
+									<ul class="actions special">
+
+									</ul>
+								</article>
+                                <article>
+									<header>
+										<span class="date"></span>
+										<h2><a href="#">Web Scraping<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="{{url_for('static',filename='images/web1.png')}}" alt="" /></a>
+									<li>Request.</li>
+									<li>Beautifulsoup.</li>
+									<ul class="actions special">
+
+									</ul>
+								</article><article>
+									<header>
+										<span class="date"></span>
+										<h2><a href="#">smtplib<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="{{url_for('static',filename='images/smtp.jpg')}}" alt="" /></a>
+									<ul class="actions special">
+
+									</ul>
+								</article>
+
+							</section>
+
+						<!-- Footer -->
+							<footer>
+								<div class="pagination">
+									<!--<a href="#" class="previous">Prev</a>-->
+									<a href="#" class="page active"></a>
+
+								</div>
+							</footer>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+						</section>
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>Kummara street,punganur<br />
+								chittoor Dist, Andhar Pradesh -517247</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">(+91) 9963600932</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">himasekhar27350@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://twitter.com/hima286425" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="https://www.linkedin.com/in/hima286425/" class="icon brands fa-linkedin"><span class="label">Instagram</span></a></li>
+									<li><a href="https://github.com/Himasekhar286425" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; </li><li>Design: <a href="https://html5up.net">HIMA SEKHAR</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="static/js/jquery.min.js"></script>
+			<script src="static/js/jquery.scrollex.min.js"></script>
+			<script src="static/js/jquery.scrolly.min.js"></script>
+			<script src="static/js/browser.min.js"></script>
+			<script src="static/js/breakpoints.min.js"></script>
+			<script src="static/js/util.js"></script>
+			<script src="static/js/main.js"></script>
+
+	</body>
+</html>
